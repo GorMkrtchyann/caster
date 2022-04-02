@@ -2,10 +2,8 @@ body
     margin: 0
     padding: 0
     font-family: Arial
-    background: url(../images/casterback.png)
-    background-size: cover
-    background-position: center
-    background-attachment: fixed
+    background: #000
+    color: #fff
 
 .body
     width: 100%
@@ -27,10 +25,82 @@ body
         h1
             font-size: 120px
             line-height: 0
+            color: #fff
         p
             color: #ffbb00
             letter-spacing: 1px
             margin-top: -30px
+
+.menu
+    width: 90px
+    height: 100vh
+    position: fixed
+    z-index: 9999
+    background: linear-gradient(145deg, rgba(255,89,0,1) 0%, rgba(255,149,0,1) 100%)
+    color: #fff
+    border-radius: 0 15px 15px 0
+    display: flex
+    justify-content: space-between
+    transition: 0.3s
+    overflow: hidden
+    .item
+        .logo
+            display: flex
+            align-items: center
+            img
+                width: 45px
+                margin-left: 10px
+            h2
+                margin-left: 55px
+        .icons
+            width: 250px
+            display: flex
+            margin-top: 50px
+            a
+                color: #fff
+                text-decoration: none
+            .i
+                display: flex
+                flex-direction: column
+                margin-left: 20px
+                i
+                    margin-bottom: 20px
+                    font-size: 20px
+            .p
+                margin-top: -15px
+                font-weight: 600
+                margin-left: 45px
+                p
+                    margin-bottom: 22px
+        .tcf-logo
+            margin-top: 280px
+            margin-left: 10px
+            img
+                width: 45px
+    .open-arrow
+        height: 100vh
+        border-left: 1px solid #ffffff49
+        display: flex
+        align-items: center
+        margin-right: 5px
+        position: absolute
+        right: 0
+        i
+            font-size: 25px
+            margin-left: 5px
+        .fa-chevron-right
+            display: block
+        .fa-chevron-left
+            display: none
+.menu-active
+    width: 280px
+    .open-arrow
+        .fa-chevron-left
+            display: block
+        .fa-chevron-right
+            display: none
+
+
 
 .content
     width: 70%
@@ -42,5 +112,30 @@ body
         list-style: decimal
     p
         line-height: 25px
+        color: #fff
     h3
         margin-left: 20px
+        color: #fff
+    .cdn
+        background: #99999928
+        padding: 30px
+        border-radius: 20px
+        color: #fff
+        span
+            color: #0011ff
+        a
+            color: #6f00ff
+        b
+            color: #ae00ff
+            font-weight: 100
+        c
+            color: #0084ff
+    ul
+        li
+            line-height: 25px
+            background: #99999928
+            padding: 10px
+            margin-bottom: 5px
+            border-radius: 10px
+            i
+                margin: 0 10px
