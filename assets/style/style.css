@@ -1,1 +1,73 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  background: url(../images/casterback.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.body {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.body hr {
+  opacity: 0.2;
+}
+
+.mian-title {
+  width: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 30px auto;
+}
+
+.mian-title img {
+  width: 200px;
+}
+
+.mian-title .title {
+  text-align: center;
+}
+
+.mian-title .title h1 {
+  font-size: 120px;
+  line-height: 0;
+}
+
+.mian-title .title p {
+  color: #ffbb00;
+  letter-spacing: 1px;
+  margin-top: -30px;
+}
+
+.content {
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.content h2 {
+  text-transform: capitalize;
+  color: #ffbb00;
+  list-style: decimal;
+}
+
+.content p {
+  line-height: 25px;
+}
+
+.content h3 {
+  margin-left: 20px;
+}
+/*# sourceMappingURL=style.css.map */
