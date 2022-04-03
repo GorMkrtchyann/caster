@@ -4,7 +4,8 @@ body
     font-family: Arial
     background: #000
     color: #fff
-
+html
+    scroll-behavior: smooth 
 .body
     width: 100%
     overflow: hidden
@@ -72,9 +73,39 @@ body
                 margin-left: 45px
                 p
                     margin-bottom: 22px
+                    cursor: pointer
+                .ul
+                    height: 0
+                    width: 200px
+                    border-left: 2.5px solid #fff
+                    margin-top: -20px
+                    margin-left: 20px
+                    transition: 0.3s
+                    overflow: hidden
+                    position: relative
+                    ul
+                        position: absolute
+                        margin-top: 10px
+                        margin-left: -15px
+                        li
+                            list-style: none
+                            line-height: 22px
+                            margin-left: -30px
+                            display: flex
+                            align-items: center
+                            a
+                                font-size: 13px
+                            div
+                                width: 15px
+                                background: #fff
+                                height: 2px
+                                margin-right: 5px
+                .ul-active
+                    height: 140px
         .tcf-logo
             margin-top: 280px
             margin-left: 10px
+            position: fixed
             img
                 width: 45px
     .open-arrow
@@ -139,3 +170,23 @@ body
             border-radius: 10px
             i
                 margin: 0 10px
+    .mobile-open div
+        background: #fff
+    .mobile-close div
+        background: #fff
+    .mobile-close
+        left: 0
+    .mob-ex
+        border-left: 2px solid #ffbb00
+        background: #99999928
+        padding: 20px
+        span
+            color: #6f00ff
+        a
+            color: #7700ff
+        b
+            color: #ffc266
+            font-weight: 100
+        video
+            width: 600px
+        

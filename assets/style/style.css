@@ -6,6 +6,10 @@ body {
   color: #fff;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .body {
   width: 100%;
   overflow: hidden;
@@ -124,11 +128,58 @@ body {
 
 .menu .item .icons .p p {
   margin-bottom: 22px;
+  cursor: pointer;
+}
+
+.menu .item .icons .p .ul {
+  height: 0;
+  width: 200px;
+  border-left: 2.5px solid #fff;
+  margin-top: -20px;
+  margin-left: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  overflow: hidden;
+  position: relative;
+}
+
+.menu .item .icons .p .ul ul {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: -15px;
+}
+
+.menu .item .icons .p .ul ul li {
+  list-style: none;
+  line-height: 22px;
+  margin-left: -30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu .item .icons .p .ul ul li a {
+  font-size: 13px;
+}
+
+.menu .item .icons .p .ul ul li div {
+  width: 15px;
+  background: #fff;
+  height: 2px;
+  margin-right: 5px;
+}
+
+.menu .item .icons .p .ul-active {
+  height: 140px;
 }
 
 .menu .item .tcf-logo {
   margin-top: 280px;
   margin-left: 10px;
+  position: fixed;
 }
 
 .menu .item .tcf-logo img {
@@ -230,5 +281,40 @@ body {
 
 .content ul li i {
   margin: 0 10px;
+}
+
+.content .mobile-open div {
+  background: #fff;
+}
+
+.content .mobile-close div {
+  background: #fff;
+}
+
+.content .mobile-close {
+  left: 0;
+}
+
+.content .mob-ex {
+  border-left: 2px solid #ffbb00;
+  background: #99999928;
+  padding: 20px;
+}
+
+.content .mob-ex span {
+  color: #6f00ff;
+}
+
+.content .mob-ex a {
+  color: #7700ff;
+}
+
+.content .mob-ex b {
+  color: #ffc266;
+  font-weight: 100;
+}
+
+.content .mob-ex video {
+  width: 600px;
 }
 /*# sourceMappingURL=style.css.map */
