@@ -315,6 +315,7 @@ button{
 .mobile-open{
     cursor: pointer;
     margin: 10px;
+    width: 30px;
 }
 .mobile-open div{
     width: 30px;
