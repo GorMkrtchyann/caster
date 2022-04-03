@@ -1,9 +1,13 @@
-document.querySelector('.mobile-open').innerHTML =
-`
-<div></div>
-<div></div>
-<div></div>
-`
+let mobileopen = document.querySelectorAll('.mobile-open');
+for(elem of mobileopen){
+    elem.innerHTML =
+    `
+    <div></div>
+    <div></div>
+    <div></div>
+    `
+}
+
 
 document.querySelector('.mobile-close').innerHTML =
 `
