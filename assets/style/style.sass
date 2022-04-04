@@ -2,7 +2,11 @@ body
     margin: 0
     padding: 0
     font-family: Arial
-    background: #000
+    background: url(../images/back.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: -600px 0
+    background-attachment: fixed
     color: #fff
 html
     scroll-behavior: smooth 
@@ -21,6 +25,7 @@ html
     margin: 30px auto
     img
         width: 200px
+        animation: logo-rot 3s 0s infinite
     .title
         text-align: center
         h1
@@ -31,13 +36,22 @@ html
             color: #ffbb00
             letter-spacing: 1px
             margin-top: -30px
+    @keyframes logo-rot
+        0%
+            transform: rotate(0deg)
+        50%
+            transform: rotate(25deg)
+        100%
+            transform: rotate(0deg)
+            
 
 .menu
     width: 90px
     height: 100vh
     position: fixed
     z-index: 9999
-    background: linear-gradient(145deg, rgba(255,89,0,1) 0%, rgba(255,149,0,1) 100%)
+    background: rgba(0, 0, 0, 0.1)
+    backdrop-filter: blur(5px) 
     color: #fff
     border-radius: 0 15px 15px 0
     display: flex
@@ -103,9 +117,9 @@ html
                 .ul-active
                     height: 140px
         .tcf-logo
-            margin-top: 280px
-            margin-left: 10px
-            position: fixed
+            position: absolute
+            bottom: 20px
+            left: 8px
             img
                 width: 45px
     .open-arrow
@@ -148,7 +162,8 @@ html
         margin-left: 20px
         color: #fff
     .cdn
-        background: #99999928
+        background: #000000c9
+        backdrop-filter: blur(5px) 
         padding: 30px
         border-radius: 20px
         color: #fff
@@ -164,7 +179,8 @@ html
     ul
         li
             line-height: 25px
-            background: #99999928
+            background: #0000008c
+            backdrop-filter: blur(5px) 
             padding: 10px
             margin-bottom: 5px
             border-radius: 10px
@@ -178,7 +194,8 @@ html
         left: 0
     .mob-ex
         border-left: 2px solid #ffbb00
-        background: #99999928
+        background: #000000c9
+        backdrop-filter: blur(5px) 
         padding: 20px
         span
             color: #6f00ff
@@ -189,4 +206,6 @@ html
             font-weight: 100
         video
             width: 600px
+
+                 
         

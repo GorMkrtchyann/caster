@@ -2,7 +2,11 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial;
-  background: #000;
+  background: url(../images/back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -600px 0;
+  background-attachment: fixed;
   color: #fff;
 }
 
@@ -36,6 +40,8 @@ html {
 
 .mian-title img {
   width: 200px;
+  -webkit-animation: logo-rot 3s 0s infinite;
+          animation: logo-rot 3s 0s infinite;
 }
 
 .mian-title .title {
@@ -54,12 +60,44 @@ html {
   margin-top: -30px;
 }
 
+@-webkit-keyframes logo-rot {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(25deg);
+            transform: rotate(25deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes logo-rot {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(25deg);
+            transform: rotate(25deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
 .menu {
   width: 90px;
   height: 100vh;
   position: fixed;
   z-index: 9999;
-  background: linear-gradient(145deg, #ff5900 0%, #ff9500 100%);
+  background: rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   color: #fff;
   border-radius: 0 15px 15px 0;
   display: -webkit-box;
@@ -177,9 +215,9 @@ html {
 }
 
 .menu .item .tcf-logo {
-  margin-top: 280px;
-  margin-left: 10px;
-  position: fixed;
+  position: absolute;
+  bottom: 20px;
+  left: 8px;
 }
 
 .menu .item .tcf-logo img {
@@ -248,7 +286,9 @@ html {
 }
 
 .content .cdn {
-  background: #99999928;
+  background: #000000c9;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   padding: 30px;
   border-radius: 20px;
   color: #fff;
@@ -273,7 +313,9 @@ html {
 
 .content ul li {
   line-height: 25px;
-  background: #99999928;
+  background: #0000008c;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   padding: 10px;
   margin-bottom: 5px;
   border-radius: 10px;
@@ -297,7 +339,9 @@ html {
 
 .content .mob-ex {
   border-left: 2px solid #ffbb00;
-  background: #99999928;
+  background: #000000c9;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   padding: 20px;
 }
 
