@@ -13,6 +13,11 @@ html {
   width: 100%;
   overflow: hidden;
   position: relative;
+  background: url(../images/back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: -200px 0;
 }
 
 .body hr {
