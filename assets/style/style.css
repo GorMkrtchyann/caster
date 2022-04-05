@@ -175,6 +175,10 @@ html {
   }
 }
 
+#rus, #usa {
+  display: none;
+}
+
 .language-changer {
   background: #d3d3d344;
   -webkit-backdrop-filter: blur(3px);
