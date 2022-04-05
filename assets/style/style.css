@@ -175,6 +175,47 @@ html {
   }
 }
 
+.language-changer {
+  background: #d3d3d344;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  border-radius: 30px;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  z-index: 10;
+  top: 15px;
+  right: 15px;
+  overflow: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.language-changer .items {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.language-changer .items img {
+  width: 30px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.language-changer .items img:last-child {
+  margin-bottom: 0;
+}
+
+.lang-a {
+  height: 140px;
+}
+
 .mian-title {
   width: 700px;
   display: -webkit-box;

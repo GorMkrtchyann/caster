@@ -93,6 +93,31 @@ html
   100% 
     opacity: 0
 
+.language-changer 
+    background: #d3d3d344
+    backdrop-filter: blur(3px)
+    border-radius: 30px
+    width: 50px
+    height: 50px
+    position: fixed
+    z-index: 10
+    top: 15px
+    right: 15px
+    overflow: hidden
+    transition: 0.3s
+    .items
+        padding: 10px
+        display: flex
+        flex-direction: column
+        img
+            width: 30px
+            margin-bottom: 15px
+            cursor: pointer
+            &:last-child
+                margin-bottom: 0
+.lang-a
+    height: 140px
+
 .mian-title
     width: 700px
     display: flex

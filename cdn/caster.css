@@ -141,6 +141,17 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
+.dfc-x{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dfc-y{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 /* -----------------Vert--Horiz--Center------------------ */
 
 /* --------------------------Links----------------------- */

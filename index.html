@@ -22,6 +22,13 @@
         </div>
     </div>
     <div class="body">
+        <div class="language-changer">
+            <div class="items">
+                <img onclick="arm()" src="assets/images/language/armenia.png" alt="armenia">
+                <img onclick="rus()" src="assets/images/language/russia.png" alt="rusia">
+                <img onclick="usa()" src="assets/images/language/united-states.png" alt="usa">
+            </div>
+        </div>
         <div class="menu">
             <div class="item">
                 <div class="logo">
@@ -48,7 +55,7 @@
                             <p>Caster-ի Մասին</p>
                         </a>
                         <a href="#lk">
-                            <p>Լինկերը</p>
+                            <p>Հղումներ</p>
                         </a>
                         <a href="#code" id="code-but">
                             <p>Կոդերը</p>
@@ -90,7 +97,7 @@
         <div class="content">
             <article id="ab">
                 <h2>Ինչ է իրենից ներկայացնում Caster ֆրեմվորկը</h2>
-                <p>Caster-ը հայկական առաջին ֆրեմվորկն է այն կրճատում է ձեր CSS և JS կոդը։ Այն աշատում է
+                <p>Caster-ը հայկական առաջին ֆրեմվորկն է այն կրճատում է ձեր CSS և JS կոդը։ Այն աշխատում է
                 հետևյալ տրամաբանությամբ՝ ստեղծվաց է հատուկ կլասների անուներ որոնք կատարում են տարբեր ֆունկցիաներ
                 դուք տեղադրում եք Caster-ի կապող լինկը ձեր HTML ֆայլի մեջ և ձեր բլոկներին տալիս եք այդ կլասների անուները։
             </p>
@@ -125,17 +132,17 @@
             <article id="cont">
                 <h3>Container</h3>
             <ul>
-                <li>cont <i class="fa-solid fa-arrow-right"></i> Լայնություն 95%, վարևից և նեքևից 30px հեռավորություն, հավասարեցված մեջտեղ</li>
-                <li>cont-s <i class="fa-solid fa-arrow-right"></i> Լայնություն 80%, վարևից և նեքևից 30px հեռավորություն, հավասարեցված մեջտեղ</li>
-                <li>cont-m <i class="fa-solid fa-arrow-right"></i> Լայնություն 90%, վարևից և նեքևից 30px հեռավորություն, հավասարեցված մեջտեղ</li>
+                <li>cont <i class="fa-solid fa-arrow-right"></i> Լայնություն 95%, վարևից և նեքևից 30px հեռավորություն, հավասարեցված կենտրոն</li>
+                <li>cont-s <i class="fa-solid fa-arrow-right"></i> Լայնություն 80%, վարևից և նեքևից 30px հեռավորություն, հավասարեցված կենտրոն</li>
+                <li>cont-m <i class="fa-solid fa-arrow-right"></i> Լայնություն 90%, վարևից և նեքևից 30px հեռավորություն, հավասարեցված կենտրոն</li>
                 <br>
-                <li>cont-x <i class="fa-solid fa-arrow-right"></i> Լայնություն 0%, վարևից և նեքևից 30px հեռավորություն, հավասարեցված մեջտեղ</li>
-                <li>cont-xs <i class="fa-solid fa-arrow-right"></i> Լայնություն 0%, վարևից և նեքևից 10px հեռավորություն, հավասարեցված մեջտեղ</li>
-                <li>cont-xm <i class="fa-solid fa-arrow-right"></i> Լայնություն 0%, վարևից և նեքևից 20px հեռավորություն, հավասարեցված մեջտեղ</li>
+                <li>cont-x <i class="fa-solid fa-arrow-right"></i> Լայնություն 0%, վարևից և նեքևից 30px հեռավորություն, հավասարեցված կենտրոն</li>
+                <li>cont-xs <i class="fa-solid fa-arrow-right"></i> Լայնություն 0%, վարևից և նեքևից 10px հեռավորություն, հավասարեցված կենտրոն</li>
+                <li>cont-xm <i class="fa-solid fa-arrow-right"></i> Լայնություն 0%, վարևից և նեքևից 20px հեռավորություն, հավասարեցված կենտրոն</li>
                 <br>
-                <li>cont-y <i class="fa-solid fa-arrow-right"></i> Լայնություն 95%, վարևից և նեքևից 0px հեռավորություն, հավասարեցված մեջտեղ</li>
-                <li>cont-ys <i class="fa-solid fa-arrow-right"></i> Լայնություն 80%, վարևից և նեքևից 0px հեռավորություն, հավասարեցված մեջտեղ</li>
-                <li>cont-ym <i class="fa-solid fa-arrow-right"></i> Լայնություն 90%, վարևից և նեքևից 0px հեռավորություն, հավասարեցված մեջտեղ</li>
+                <li>cont-y <i class="fa-solid fa-arrow-right"></i> Լայնություն 95%, վարևից և նեքևից 0px հեռավորություն, հավասարեցված կենտրոն</li>
+                <li>cont-ys <i class="fa-solid fa-arrow-right"></i> Լայնություն 80%, վարևից և նեքևից 0px հեռավորություն, հավասարեցված կենտրոն</li>
+                <li>cont-ym <i class="fa-solid fa-arrow-right"></i> Լայնություն 90%, վարևից և նեքևից 0px հեռավորություն, հավասարեցված կենտրոն</li>
             </ul>
             </article>
             <br>
@@ -182,7 +189,9 @@
                 <h3>Հավասրեցում</h3>
                 <ul>
                     <li>vhc <i class="fa-solid fa-arrow-right"></i> հավասրեցնում է մեջտեղ ուղահայաց և հորիզոնական բայց երբ որ կոնտենտը պետք է կենտրոննա
-                    էկրանի մեջտեղում</li>
+                        էկրանի կենտրոնում</li>
+                    <li>dfc-x <i class="fa-solid fa-arrow-right"></i> հավասրեցնում է մեջտեղ ուղահայաց և հորիզոնական և նրա մեջ գտնվող բլոկները դասավորվում են հորիզոնական</li>
+                    <li>dfc-y <i class="fa-solid fa-arrow-right"></i> հավասրեցնում է մեջտեղ ուղահայաց և հորիզոնական և նրա մեջ գտնվող բլոկները դասավորվում են ուղահայաց</li>
                 </ul>
             </article>
             <br>
@@ -198,33 +207,33 @@
                 <p>Բոլոր կոճակները ստանում են cursor: pointer հատկությունը, padding, :hover, շոխք(shadow)</p>
                 <ul>
                     <li>btn-n <i class="fa-solid fa-arrow-right"></i> Վերևից և ներքևից 7px աջից և ձախից 30px
-                    ներքին նեռավորություն(padding) <button class="btn-n">btn-n</button></li>
+                    ներքին hեռավորություն(padding) <button class="btn-n">btn-n</button></li>
                     <li>btn-m <i class="fa-solid fa-arrow-right"></i> Վերևից և ներքևից 10px աջից և ձախից 40px
-                        ներքին նեռավորություն(padding) <button class="btn-m">btn-m</button></li>
+                        ներքին hեռավորություն(padding) <button class="btn-m">btn-m</button></li>
                     <li>btn-l <i class="fa-solid fa-arrow-right"></i> Վերևից և ներքևից 15px աջից և ձախից 50px
-                        ներքին նեռավորություն(padding) <button class="btn-l">btn-l</button></li>
+                        ներքին hեռավորություն(padding) <button class="btn-l">btn-l</button></li>
                     <br>
                     <li>btn <i class="fa-solid fa-arrow-right"></i> Վերևից և ներքևից 8px աջից և ձախից 30px
-                        ներքին նեռավորություն(padding), նարնջագույն <button class="btn">btn</button></li>
+                        ներքին hեռավորություն(padding), նարնջագույն <button class="btn">btn</button></li>
                     <li>btn-cr <i class="fa-solid fa-arrow-right"></i> Վերևից և ներքևից 8px աջից և ձախից 30px
-                        ներքին նեռավորություն(padding), կարմիր <button class="btn-cr">btn-cr</button></li>
+                        ներքին hեռավորություն(padding), կարմիր <button class="btn-cr">btn-cr</button></li>
                     <li>btn-cb <i class="fa-solid fa-arrow-right"></i> Վերևից և ներքևից 8px աջից և ձախից 30px
-                        ներքին նեռավորություն(padding), կապույտ <button class="btn-cb">btn-cb</button></li>
+                        ներքին hեռավորություն(padding), կապույտ <button class="btn-cb">btn-cb</button></li>
                     <li>btn-cg <i class="fa-solid fa-arrow-right"></i> Վերևից և ներքևից 8px աջից և ձախից 30px
-                        ներքին նեռավորություն(padding), կանաչ <button class="btn-cg">btn-cg</button></li>
+                        ներքին hեռավորություն(padding), կանաչ <button class="btn-cg">btn-cg</button></li>
                     <li>btn-c0 <i class="fa-solid fa-arrow-right"></i> Վերևից և ներքևից 8px աջից և ձախից 30px
-                        ներքին նեռավորություն(padding), սև <button class="btn-c0">btn-c0</button></li>
+                        ներքին hեռավորություն(padding), սև <button class="btn-c0">btn-c0</button></li>
                     <li>btn-cf <i class="fa-solid fa-arrow-right"></i> Վերևից և ներքևից 8px աջից և ձախից 30px
-                        ներքին նեռավորություն(padding), սպիտակ <button class="btn-cf">btn-cf</button></li>
+                        ներքին hեռավորություն(padding), սպիտակ <button class="btn-cf">btn-cf</button></li>
                     <br>
                     <li>btn-sky <i class="fa-solid fa-arrow-right"></i> Վերևից և ներքևից 8px աջից և ձախից 30px
-                        ներքին նեռավորություն(padding), կապույտ և մանուշակակգույն gradient <button class="btn-sky">btn-sky</button></li>
+                        ներքին hեռավորություն(padding), կապույտ և մանուշակակգույն gradient <button class="btn-sky">btn-sky</button></li>
                     <li>btn-fier <i class="fa-solid fa-arrow-right"></i> Վերևից և ներքևից 8px աջից և ձախից 30px
-                        ներքին նեռավորություն(padding), կարմիր և նարնջագույն gradient <button class="btn-fier">btn-fier</button></li>
+                        ներքին hեռավորություն(padding), կարմիր և նարնջագույն gradient <button class="btn-fier">btn-fier</button></li>
                     <li>btn-forest <i class="fa-solid fa-arrow-right"></i> Վերևից և ներքևից 8px աջից և ձախից 30px
-                        ներքին նեռավորություն(padding), կանաչի 2 երանգներով gradient <button class="btn-forest">btn-forest</button></li>
+                        ներքին hեռավորություն(padding), կանաչի 2 երանգներով gradient <button class="btn-forest">btn-forest</button></li>
                     <li>btn-sea <i class="fa-solid fa-arrow-right"></i> Վերևից և ներքևից 8px աջից և ձախից 30px
-                        ներքին նեռավորություն(padding), կապույտի 2 երանգներով gradient կենտրոնացված դեպի կենտրոն <button class="btn-sea">btn-sea</button></li>
+                        ներքին hեռավորություն(padding), կապույտի 2 երանգներով gradient կենտրոնացված դեպի կենտրոն <button class="btn-sea">btn-sea</button></li>
                 </ul>
             </article>
             <br>
@@ -237,10 +246,10 @@
                     <li>mobile-open bars-short <i class="fa-solid fa-arrow-right"></i> Այլ տարբերակ <div class="mobile-open bars-short"></div></li>
                     <li>mobile-open bars-filter <i class="fa-solid fa-arrow-right"></i> Այլ տարբերակ <div class="mobile-open bars-filter"></div></li>
                     <li>mobile-open bars-stag <i class="fa-solid fa-arrow-right"></i> Այլ տարբերակ <div class="mobile-open bars-stag"></div></li>
-                    <p>Կոճակնորն ունեն սկզբնական սև գույն որը կարող եք փոխել գրելով սա css ֆալում <mark>.mobile-open div{background: #fff;}</mark></p>
+                    <p>Կոճակնորն ունեն սկզբնական սև գույն որը կարող եք փոխել գրելով սա css ֆայլում <mark>.mobile-open div{background: #fff;}</mark></p>
                     <br>
-                    <li>mobile-close <i class="fa-solid fa-arrow-right"></i> Այլ տարբերակ <div class="mobile-close"></div></li>
-                    <p>Այն սկզբնական սև գույն որը կարող եք փոխել գրելով սա css ֆալում <mark>.mobile-close div{background: #fff;}</mark></p>
+                    <li>mobile-close <i class="fa-solid fa-arrow-right"></i> Սա մենյուն փակող կոճակն է <div class="mobile-close"></div></li>
+                    <p>Այն սկզբնական սև գույն որը կարող եք փոխել գրելով սա css ֆայլում <mark>.mobile-close div{background: #fff;}</mark></p>
                     <br>
                     <li>mobile-menu <i class="fa-solid fa-arrow-right"></i> Սա մոբայլ մենյուի կմախքն է</li>
                 </ul>
