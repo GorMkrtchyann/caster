@@ -220,6 +220,10 @@ html {
   height: 140px;
 }
 
+.mob-menu {
+  display: none;
+}
+
 .mian-title {
   width: 700px;
   display: -webkit-box;
@@ -576,6 +580,9 @@ html {
 @media screen and (max-width: 768px) {
   .menu {
     display: none;
+  }
+  .mmbb {
+    display: block;
   }
   .mob-menu {
     position: fixed;

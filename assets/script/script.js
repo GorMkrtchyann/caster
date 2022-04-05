@@ -57,13 +57,11 @@ for(elem of codeButMain){
 
 
 let cssCdnBut = document.querySelectorAll('.css-copy');
-let cssCdn = document.querySelectorAll('.css-cdn').textContent;
+let cssCdn = document.querySelector('.css-cdn').textContent;
 
 for(elem of cssCdnBut){
     elem.addEventListener("click", function(){
-        for(elem2 of cssCdn){
-            navigator.clipboard.writeText(elem2)
-        }
+        navigator.clipboard.writeText(cssCdn)
 
         let cdnI = document.querySelectorAll('.cdn i');
         for(elem3 of cdnI){
@@ -74,17 +72,15 @@ for(elem of cssCdnBut){
 
 
 let jsCdnBut = document.querySelectorAll('.js-copy');
-let jsCdn = document.querySelectorAll('.js-cdn').textContent;
+let jsCdn = document.querySelector('.js-cdn').textContent;
 
 for(elem of jsCdnBut){
     elem.addEventListener("click", function(){
-        for(elem2 of jsCdn){
-            navigator.clipboard.writeText(elem2)
-        }
+        navigator.clipboard.writeText(jsCdn)
 
-        let cdnI = document.querySelectorAll('.cdn i');
-        for(elem3 of cdnI){
-            elem3.style.display = 'inline'
+        let cdnI = document.querySelectorAll('.cdn2 i');
+        for(elem2 of cdnI){
+            elem2.style.display = 'inline'
         }
     });
 }
