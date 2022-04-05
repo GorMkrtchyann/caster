@@ -1,8 +1,11 @@
 document.querySelector('.open-arrow').addEventListener("click", function(){
     document.querySelector('.menu').classList.toggle('menu-active');
+    document.querySelector('.ul').classList.remove('ul-active')
+
 });
 window.addEventListener("scroll", function(){
     document.querySelector('.menu').classList.remove('menu-active');
+    document.querySelector('.ul').classList.remove('ul-active')
 })
 
 document.querySelector('#code-but').addEventListener("click", function(){
@@ -28,3 +31,9 @@ jsCdnBut.addEventListener("click", function(){
     navigator.clipboard.writeText(jsCdn)
     document.querySelector('.cdn2 i').style.display = 'inline'
 });
+
+function load() {
+    setTimeout(() => {
+        document.querySelector('.load').style.display = 'none'
+    }, 2000);    
+}
