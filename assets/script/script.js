@@ -21,11 +21,14 @@ window.addEventListener("scroll", function(){
             elem2.classList.remove('ul-active')
         }
     }
-
     let leng = document.querySelectorAll('.language-changer')
     for(elem3 of leng){
         elem3.classList.remove('lang-a');
     }   
+    let mobMenu = document.querySelectorAll('.mob-menu')
+    for(elem4 of mobMenu){
+        elem4.classList.remove('mob-a');
+    } 
 })
 
 let codeBut = document.querySelectorAll('.code-but')
@@ -138,3 +141,16 @@ for(elem of armBut){
         document.querySelector('#usa').style.display = 'none'
     })
 }
+
+
+let mobMenu = document.querySelectorAll('.mob-menu');
+
+for(elem of mobMenu){
+    elem.addEventListener("click", function(){
+        let mobMenu = document.querySelectorAll('.mob-menu');
+        for(elem2 of mobMenu){
+            elem2.classList.toggle('mob-a');
+        }
+    })
+}
+

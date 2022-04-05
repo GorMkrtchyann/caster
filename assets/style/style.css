@@ -573,9 +573,59 @@ html {
   width: 600px;
 }
 
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+  .mob-menu {
+    position: fixed;
+    background: #00000050;
+    -webkit-backdrop-filter: blur(3px);
+            backdrop-filter: blur(3px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 50px;
+    z-index: 10;
+    width: 60px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    height: 60px;
+    top: 10px;
+    left: 20px;
+    overflow: hidden;
+  }
+  .mob-menu img {
+    width: 35px;
+    margin-right: 13px;
+  }
+  .mob-menu .i {
+    margin-right: 15px;
+    width: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .mob-menu .i a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  .mob-a {
+    width: 250px;
+  }
+}
+
 @media screen and (max-width: 540px) {
   .content {
-    width: 65%;
+    width: 80%;
   }
   .content .cdn {
     padding: 10px;
@@ -643,7 +693,7 @@ html {
     margin-top: -15px;
   }
   .content {
-    width: 70%;
+    width: 80%;
   }
   .content p {
     font-size: 13px;
@@ -763,7 +813,7 @@ html {
 
 @media screen and (max-width: 375px) {
   .content {
-    width: 65%;
+    width: 80%;
   }
   .content p {
     font-size: 13px;
@@ -776,7 +826,7 @@ html {
     width: 200px;
   }
   .content .cdn p {
-    font-size: 8px;
+    font-size: 9px;
     line-height: 10px;
   }
   .mian-title {
@@ -806,7 +856,7 @@ html {
 
 @media screen and (max-width: 320px) {
   .content {
-    width: 60%;
+    width: 80%;
   }
   .content p {
     font-size: 10px;
@@ -822,7 +872,7 @@ html {
     width: 200px;
   }
   .content .cdn p {
-    font-size: 6px;
+    font-size: 8px;
     line-height: 8px;
   }
   .content .mob-ex {
