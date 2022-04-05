@@ -35,5 +35,6 @@ jsCdnBut.addEventListener("click", function(){
 function load() {
     setTimeout(() => {
         document.querySelector('.load').style.display = 'none'
+        document.querySelector('body').classList.add('body-a')
     }, 2000);    
 }
