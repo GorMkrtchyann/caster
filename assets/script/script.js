@@ -151,7 +151,3 @@ for(elem of mobMenu){
 }
 
 
-'https://gormkrtchyann.github.io/caster/'
-  .split('/')
-  .slice(0,5).join('/');
-
