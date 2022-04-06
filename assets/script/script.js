@@ -63,7 +63,7 @@ for(elem of cssCdnBut){
     elem.addEventListener("click", function(){
         navigator.clipboard.writeText(cssCdn)
 
-        let cdnI = document.querySelectorAll('.cdn i');
+        let cdnI = document.querySelectorAll('.cdn3 i');
         for(elem3 of cdnI){
             elem3.style.display = 'inline'
         }

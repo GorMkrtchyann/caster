@@ -1,11 +1,10 @@
 /* -------------------------Body-------------------------- */
 body{
     font-family: Arial, sans-serif;
-}
-.bmp{
     margin: 0;
     padding: 0;
 }
+
 /* -------------------------Body-------------------------- */
 
 /* -------------------------Conteiner-------------------- */
@@ -454,3 +453,161 @@ button{
 .mobile-menu-cr ul li a{
     text-decoration: none;
 }
+
+/*---------------typeograf-----------------*/
+
+.h1{
+    font-size: 32px;
+    font-weight: 600;
+}
+.h2{
+    font-size: 25px;
+    font-weight: 600;
+}
+.h3{
+    font-size: 19px;
+    font-weight: 600;
+}
+.h4{
+    font-size: 16px;
+    font-weight: 600;
+}
+.h5{
+    font-size: 14px;
+    font-weight: 600;
+}
+.h6{
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.fs-s{
+    font-size: 35px;
+}
+.fs-m{
+    font-size: 45px;
+}
+.fs-l{
+    font-size: 55px;
+}
+
+td-c{
+    border: 1px solid red;
+    border-radius: 100px;
+    padding: 4px;
+    width: auto;
+}
+td-c.blue{
+    border-color: blue;
+}
+td-c.green{
+    border-color: green;
+}
+td-c.yellow{
+    border-color: rgb(255, 217, 0);
+}
+td-c.purple{
+    border-color: purple;
+}
+td-c.white{
+    border-color: white;
+}
+td-c.black{
+    border-color: black;
+}
+
+td-r{
+    border: 1px solid red;
+    border-radius: 2px;
+    width: auto;
+    display: inline-block;
+    padding: 0 5px;
+}
+td-r.toleft{
+    transform: skew(15deg)
+}
+td-r.toright{
+    transform: skew(-15deg)
+}
+
+td-r.blue{
+    border-color: blue;
+}
+td-r.green{
+    border-color: green;
+}
+td-r.yellow{
+    border-color: rgb(255, 217, 0);
+}
+td-r.purple{
+    border-color: purple;
+}
+td-r.white{
+    border-color: white;
+}
+td-r.black{
+    border-color: black;
+}
+@media screen and (max-width: 425px) {
+    .h1{
+        font-size: 25px;
+    }
+    .h2{
+        font-size: 20px;
+    }
+    .h3{
+        font-size: 17px;
+    }
+    .h4{
+        font-size: 15px;
+    }
+    .h5{
+        font-size: 13px;
+    }
+    .fs-s{
+        font-size: 30px;
+    }
+    .fs-m{
+        font-size: 40px;
+    }
+    .fs-l{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .h1{
+        font-size: 20px;
+    }
+    .h2{
+        font-size: 18px;
+    }
+    .h3{
+        font-size: 16px;
+    }
+    .h4{
+        font-size: 14px;
+    }
+    .fs-s{
+        font-size: 25px;
+    }
+    .fs-m{
+        font-size: 35px;
+    }
+    .fs-l{
+        font-size: 45px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .fs-s{
+        font-size: 20px;
+    }
+    .fs-m{
+        font-size: 30px;
+    }
+    .fs-l{
+        font-size: 40px;
+    }
+}
+
+/*---------------typeograf-----------------*/
