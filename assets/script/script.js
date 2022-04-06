@@ -99,6 +99,10 @@ for(elem of hoverOn){
         for(elem of document.querySelectorAll('.language-changer'))
         elem.classList.add('lang-a');
     })
+    elem.addEventListener('click', function(){
+        for(elem2 of document.querySelectorAll('.language-changer'))
+        elem2.classList.toggle('lang-a');
+    })
 }
 for(elem of hoverOn){
     elem.addEventListener('mouseleave', function(){
