@@ -645,6 +645,10 @@ html {
     font-size: 10px;
     line-height: 15px;
   }
+  .content ul p {
+    font-size: 10px;
+    line-height: 15px;
+  }
   .content .mob-ex video {
     width: 300px;
   }
